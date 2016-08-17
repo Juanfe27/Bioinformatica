@@ -17,11 +17,13 @@ public class FASTQ extends FileReader{
     char[] alfabeto = {'A','T','C','G','U','a','c','g','t','u'};
     public static List<String> nombres;
     public static List<String> cadenas;
+    public static List<String> calidades;
     
     public FASTQ(String fileName) throws FileNotFoundException {
         super(fileName);
         nombres = new ArrayList<>();
         cadenas = new ArrayList<>();
+        calidades = new ArrayList<>();
     }
     
     @Override
@@ -126,6 +128,7 @@ public class FASTQ extends FileReader{
         {            
             nombres.add(nomCadena);
             cadenas.add(cadena);
+            calidades.add(calidad);
         }
         return 1;
     }
