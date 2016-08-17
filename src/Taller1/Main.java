@@ -15,12 +15,13 @@ public class Main {
     
     public static void main(String[] args) throws FileNotFoundException, IOException {
                 
-        FASTQ cosiato = new FASTQ("src/Taller1/test.fq");
-        cosiato.read();
+        FASTQ lector = new FASTQ("src/Taller1/test.fq");
+        lector.read();
+        lector.imprimirDatos();
         for(int i =0; i<FASTQ.cadenas.size();i++)
         {
             System.out.println(Inversor.Invertir(FASTQ.cadenas.get(i).toCharArray()));
-        }    
+        }            
     }
     
 }

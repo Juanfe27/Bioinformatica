@@ -49,7 +49,8 @@ public class FASTQ extends FileReader{
                         {
                             nombres.add(nomCadena);
                             cadenas.add(cadena);
-                            System.out.println(nomCadena+"\n"+cadena+"\n"+calidad);
+                            calidades.add(calidad);
+                            //System.out.println(nomCadena+"\n"+cadena+"\n"+calidad);
                         }
                         count++;
                         nomCadena ="";
@@ -141,6 +142,12 @@ public class FASTQ extends FileReader{
             }
         }
         return false;
+    }
+    
+    public void imprimirDatos(){
+        for(int i = 0; i< cadenas.size();i++){
+            System.out.println(nombres.get(i)+"\n"+cadenas.get(i)+"\n"+calidades.get(i));
+        }
     }
 
     

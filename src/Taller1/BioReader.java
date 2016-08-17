@@ -16,6 +16,7 @@ public abstract class BioReader extends FileReader{
     public BioReader(String fileName) throws FileNotFoundException {
         super(fileName);
     }
+    
     public abstract int read() throws IOException;
     public abstract boolean contains(char c);
     
