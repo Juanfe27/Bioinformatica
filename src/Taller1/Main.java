@@ -20,7 +20,7 @@ public class Main {
         lector.imprimirDatos();
         for(int i =0; i<FASTQ.cadenas.size();i++)
         {
-            System.out.println(Inversor.Invertir(FASTQ.cadenas.get(i).toCharArray()));
+            //System.out.println(Inversor.Invertir(FASTQ.cadenas.get(i).toCharArray()));
         }            
     }
     
